@@ -20,15 +20,18 @@
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
 			</button>
-			<%= link_to 'AwesomeEvents', root_path, class: 'navbar-brand' %>
+			<%= link_to '朝活ナビ', root_path, class: 'navbar-brand' %>
+			<div>
+  				<%= image_tag('logo.jpg') %>
+			</div>
 		</div>
 		<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 			<ul class="nav navbar-nav navbar-right">
-					<li><%= link_to 'イベントを作る' %></li>
+					<li><%= link_to 'イベントを告知する' %></li>
 				<% if logged_in? %>
 					<li><%= link_to 'ログアウト' %></li>
 				<% else %>
-					<li><%= link_to 'ログイン' %></li>
+					<li><%= link_to '主催者ログイン' %></li>
 				<% end %>
 			</ul>
 		</div>
