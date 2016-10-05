@@ -24,11 +24,11 @@
 		</div>
 		<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 			<ul class="nav navbar-nav navbar-right">
-					<li><%= link_to 'イベントを作る', new_event_path %></li>
-				<% if user logged_in? %>
-					<li><%= link_to 'ログアウト', destroy_user_session_path, method: :delete %></li>
+					<li><%= link_to 'イベントを作る' %></li>
+				<% if logged_in? %>
+					<li><%= link_to 'ログアウト' %></li>
 				<% else %>
-					<li><%= link_to 'ログイン','/auth/twitter' %></li>
+					<li><%= link_to 'ログイン' %></li>
 				<% end %>
 			</ul>
 		</div>
