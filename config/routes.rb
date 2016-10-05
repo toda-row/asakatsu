@@ -1,9 +1,16 @@
 Rails.application.routes.draw do
-  resources :events
-  devise_for :users
-  devise_for :admin_users, ActiveAdmin::Devise.config
-  ActiveAdmin.routes(self)
+
   root to: 'welcome#index'
+
+
+  get '/logout' => 'sessions#destroy', as: :logout
+
+  resource :user do
+    get 'retire'
+  end 
+
+  resources :events, except: :index do
+  end
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

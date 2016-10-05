@@ -27,9 +27,9 @@
 		</div>
 		<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 			<ul class="nav navbar-nav navbar-right">
-					<li><%= link_to 'イベントを告知する' %></li>
+					<li><%= link_to 'イベントを告知する', new_event_path %></li>
 				<% if logged_in? %>
-					<li><%= link_to 'ログアウト' %></li>
+					<li><%= link_to 'ログアウト', retire_user_path %></li>
 				<% else %>
 					<li><%= link_to '主催者ログイン' %></li>
 				<% end %>

@@ -35,8 +35,19 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 gem 'execjs'
 gem 'therubyracer'
 gem 'activeadmin', github: 'activeadmin'
-gem 'devise'
+# gem 'devise'
 gem 'config'
+
+
+gem 'kaminari'
+gem 'kaminari-bootstrap'
+
+gem 'ransack'
+
+gem 'carrierwave'
+
+gem 'mini_magick'
+
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
