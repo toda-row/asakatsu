@@ -9,7 +9,6 @@ class User < ActiveRecord::Base
 	has_many :created_events, class_name: 'Event', foreign_key: :owner_id, dependent: :nullify
 
 
-
 	private
 
 	def check_all_events_finished
@@ -23,4 +22,5 @@ class User < ActiveRecord::Base
 		end
 		errors.blank?
 	end
+
 end

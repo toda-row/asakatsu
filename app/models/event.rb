@@ -16,6 +16,9 @@ class Event < ActiveRecord::Base
 		owner_id == user.id
 	end
 
+	def created_events
+	end
+
 	def self.ransackable_atrributes(auth_object = nil)
 		%w(name start_time)
 	end

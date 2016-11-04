@@ -14,5 +14,5 @@ class WelcomeController < ApplicationController
   rescue
   	{start_time_gteq: Time.zone.now }
   end
-  
+
 end
